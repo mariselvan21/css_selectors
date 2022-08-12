@@ -1,0 +1,62 @@
+/* A CSS selector selects the HTML element(s) you want to style. */
+/* 1.Simple selectors (select elements based on name, id, class)
+2.Combinator selectors (select elements based on a specific relationship between them)
+3.Pseudo-class selectors (select elements based on a certain state)
+4.Pseudo-elements selectors (select and style a part of an element)
+5.Attribute selectors (select elements based on an attribute or attribute value) */
+/* Simple selectors (select elements based on name, id, class) */
+
+/* 1.Simple selectors (select elements based on name, id, class)
+/* The css element selector */
+p
+{
+    color: red;
+    font-size: 40px;
+}
+
+/* The css id selector */
+#any_id_name
+{
+    color:green;
+    font-size: 50px;
+}
+
+/* The css class selector */
+.any_class_name
+{
+    color:pink;
+    font-size: 80px;
+}
+
+h1.center
+{
+    color:pink;
+    font-size: 80px;  
+}
+
+p.center{
+    color: blue;
+    font-size: 20px;
+}
+
+p.large{
+    background-color: red;
+}
+
+/* Universal selector */
+*{
+    color: black;
+    background-color: red;
+    font-size: 20px;
+}
+
+/* Grouping selector */
+p,h1,section{
+    background-color: white;
+    font-size: 50px;
+}
+
+
+
+
+

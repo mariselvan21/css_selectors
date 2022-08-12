@@ -1,0 +1,130 @@
+/* A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus */
+
+/* syntax
+
+selector:psuedo-class
+{
+    property:value;
+} */
+
+/* Anchor of psuedo-classes */
+/* Links can be displayed in different ways: */
+/* unvisited link */
+/* a:link
+{
+    color:red;
+} */
+
+/* visited link */
+/* a:visited
+{
+    color:green;
+} */
+
+/* mouse over */
+/* a:hover
+{
+    color: blue;
+} */
+
+/* selected link */
+/* a:active
+{
+    color:yellow;
+} */
+/* a{
+    font-size: 30px;
+}
+
+
+Pseudo-classes and HTML Classes
+
+Pseudo-classes can be combined with HTML classes:
+When you hover over the link in the example, it will change color:
+
+a.any_class_name:hover
+{
+    color:red;
+    font-size: ;
+} */
+
+
+/* Hover on <div>
+
+An example of using the :hover pseudo-class on a <div> element: */
+
+/* div:hover{
+    color: yellow;
+    font-size: 40px;
+    background-color: blue;
+} */
+
+/* Simple Tooltip Hover
+
+Hover over a <div> element to show a <p> element (like a tooltip):
+Hover over me to show the <p> element. */
+/* p
+{
+    display: none;
+    background-color: green;
+    font-size: 30px;
+}
+div:hover p
+{
+    display: block;
+} */
+
+/* CSS - The :first-child Pseudo-class */
+
+/* The :first-child pseudo-class matches a specified element that is the first child of another element. */
+
+/* Match the first <p> element */
+/* In the following example, the selector matches any <p> element that is the first child of any element: */
+/* p:first-child
+{
+    color:green;
+} */
+
+
+/* Match the first <i> element in all <p> elements
+In the following example, the selector matches the first <i> element in all <p> elements: */
+/* p i:first-child
+{
+    color: yellow;
+} */
+
+/* CSS - The :lang Pseudo-class
+The :lang pseudo-class allows you to define special rules for different languages.
+
+In the example below, :lang defines the quotation marks for <q> elements with lang="mari": */
+
+/* q:lang(mari)
+{
+    quotes: "+" "_";
+} */
+
+/* focus the element using mouse click */
+/* input:focus
+{
+    background-color: red;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

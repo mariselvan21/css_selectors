@@ -1,0 +1,49 @@
+/* 2.Combinator selectors (select elements based on a specific relationship between them) */
+    /* A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator. */
+
+    /* Descendant selector */
+    /* The descendant selector matches all elements that are descendants of a specified element. */
+    /* selects all <p> elements inside <div> elements:  */
+    /* div p{
+        font-size: 30px;
+        color: green;
+        background-color: yellow;
+    } */
+
+    /* Child selector (>) */
+    /* The child selector selects all elements that are the children of a specified element.
+
+    The following example selects all <p> elements that are children of a <div> element: */
+    /* div>p{
+        font-size: 40px;
+        color: yellow;
+        background-color: red;
+    } */
+
+
+
+    /* Adjacent sibling selectors(+) */
+
+/* The adjacent sibling selector is used to select an element that is directly after another specific element.
+
+Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+
+The following example selects the first <p> element that are placed immediately after <div> elements: */
+
+/* div+p{
+    font-size: 40px;
+    color: red ;
+    background-color: black;
+} */
+
+/* General sibling selectors (~)
+The general sibling selector selects all elements that are next siblings of a specified element.
+
+The following example selects all <p> elements that are next siblings of <div> elements: 
+ */
+div~p
+{
+    color: blue;
+    background-color: green;
+    font-size: 40px;
+}

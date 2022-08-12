@@ -1,0 +1,107 @@
+/* CSS Pseudo-elements
+
+What are Pseudo-Elements?
+A CSS pseudo-element is used to style specified parts of an element.
+
+For example, it can be used to:
+
+Style the first letter, or line, of an element
+Insert content before, or after, the content of an element */
+
+/* syntax:
+selector:psuedo-element
+{
+    property:vlaue;
+} */
+
+/* The ::first-line Pseudo-element
+
+The ::first-line pseudo-element is used to add a special style to the first line of a text.
+The following example formats the first line of the text in all <p> elements: */
+
+/* p::first-line
+{
+    color:red;
+} */
+
+/* Note: The ::first-line pseudo-element can only be applied to block-level elements.
+
+The following properties apply to the ::first-line pseudo-element:
+
+font properties
+color properties
+background properties
+word-spacing
+letter-spacing
+text-decoration
+vertical-align
+text-transform
+line-height
+clear */
+
+/* The ::first-letter Pseudo-element
+The ::first-letter pseudo-element is used to add a special style to the first letter of a text.
+
+The following example formats the first letter of the text in all <p> elements:  */
+
+/* p::first-letter
+{
+    color: red;
+    font-size: 40px;
+} */
+
+/* Note: The ::first-letter pseudo-element can only be applied to block-level elements.
+
+The following properties apply to the ::first-letter pseudo- element: 
+
+font properties
+color properties 
+background properties
+margin properties
+padding properties
+border properties
+text-decoration
+vertical-align (only if "float" is "none")
+text-transform
+line-height
+float
+clear */
+
+
+
+/* Pseudo-elements and HTML Classes
+      Pseudo-elements can be combined with HTML classes:  */
+  /* p.student::first-letter
+  {
+    color: green;
+    font-size: 30px;
+  }     */
+/* 
+  CSS - The ::before Pseudo-element
+     The ::before pseudo-element can be used to insert some content before the content of an element.
+
+       The following example inserts an image before the content of each <p> element: */
+       p::before
+       {
+        content: "hello";
+       }
+
+/* CSS - The ::after Pseudo-element */
+
+p::after
+{
+    content: "How are you?"
+}
+
+/* CSS - The ::marker Pseudo-element
+The ::marker pseudo-element selects the markers of list items. */
+
+::marker
+{
+color: red;
+}
+
+::selection{
+    color: red;
+    background-color: yellow;
+}
